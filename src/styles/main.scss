@@ -1,0 +1,31 @@
+@use 'reset';
+@use 'vr';
+@use 'hero';
+@use 'about';
+@use 'footer';
+
+@font-face {
+    font-family: Corleone;
+    src: url(../../assets/fonts/Corleone.TTF);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Corleone;
+    src: url(../../assets/fonts/CorleoneDue.TTF);
+    font-weight: 700;
+}
+
+body{
+    background-color: vr.$corDeFundodark;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    font-family: Corleone;
+}
+
+
+
+
+
+

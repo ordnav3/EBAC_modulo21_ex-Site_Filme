@@ -16,16 +16,9 @@ function styles () {
         .pipe(gulp.dest('./dist/styles'));
 }
 
-function scripts () {
-    return gulp.src('./src/scripts/*js')
-        .pipe(uglify())
-        .pipe(gulp.dest('./dist/scripts'));
-}
 
-
-exports.default = gulp.parallel(imgemin, styles, scripts)
+exports.default = gulp.parallel(imgemin, styles, )
 
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
-    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));
 }

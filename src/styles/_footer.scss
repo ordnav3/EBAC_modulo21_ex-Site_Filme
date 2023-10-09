@@ -1,0 +1,20 @@
+@use 'vr';
+
+.footer{
+    background-color: #000;
+    
+    &__container{
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            width: 70%;
+        }
+
+        p{
+            text-align: center;
+            color: vr.$corTextoTerciario;
+        }
+    }
+}

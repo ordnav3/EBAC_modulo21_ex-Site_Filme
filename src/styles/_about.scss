@@ -1,0 +1,78 @@
+@use 'vr';
+
+.about {
+    padding-bottom: 80px;
+    padding-top: 110px;
+    background-color: vr.$corDeFundo;
+
+    @media (max-width: 768px) {
+        padding-top: 32px;
+    }
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            width: 70%;
+        }
+    }
+
+    h2, h3 {
+        text-align: center;
+        color: vr.$corDeFundoBtn;
+        font-size: 100px;
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-top: 32px;
+
+        @media (max-width: 900px) {
+            display: block;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        &__sinopse{
+            font-size: 22px;
+            text-align: center;
+            color: vr.$corTextoPrincipal;
+            padding-right: 32px;
+
+            @media (max-width: 768px) {
+                padding-right: 0;
+                font-size: 16px;
+            }
+        }
+
+        &__trailer{
+            padding-left: 32px;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                padding-left: 0;
+            }
+
+            &__video{
+                iframe{
+                    width: 500px;
+                    height: 300px;
+
+                    @media (max-width: 768px) {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+
+    }
+}

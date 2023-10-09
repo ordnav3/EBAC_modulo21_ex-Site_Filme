@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Poderoso Chefão</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./dist/styles/main.css">
 
     <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    
+
+    <section class="hero">
+        <div class="hero__content">
+            <img src="./dist/images/the_godfather.png" alt="">
+            <div class="hero__content__select">
+                <label for="seletor-straming">Onde Assistir:</label>
+                <select onchange="location.href=this.value">
+                    <option value="#hero" selected >Escolha a Opção...</option>
+                    <option value="https://www.netflix.com/br/title/60011152?source=35">
+                        Netflix
+                    </option>
+                    <option value="https://www.starplus.com/pt-br/movies/o-poderoso-chefao/3dd9XayT3S86">
+                        Star+
+                    </option>
+                    <option
+                        value="https://www.paramountplus.com/br/account/signin/?redirectUrl=%2Fmovies%2Fgodfather%2Fr6s5b8Qazrr34GXVSM4LwO4_OBB0Mwih%2F%3FsearchReferral%3Ddesktop-web%26source%3Dgoogle-organic%26ftag%3DIPP-23-10ahb6g">
+                        Paramount+
+                    </option>
+                    <option value="https://globoplay.globo.com/o-poderoso-chefao/t/P7BqsGKhwz/">
+                        Telecine
+                    </option>
+                    <option
+                        value="https://www.primevideo.com/dp/amzn1.dv.gti.2a15ee5f-12cf-4c69-9c8f-74cce80600da?autoplay=0&ref_=atv_cf_strg_wb">
+                        Amazon Prime Video
+                    </option>
+                    <option value="https://www.youtube.com/watch?v=88nc6NwAQG4">
+                        YouTube
+                    </option>
+                    <option value="https://play.google.com/store/movies/details?id=FaEJF-dIfJY.P">
+                        Google Play Filmes e TV
+                    </option>
+                    <option
+                        value="https://tv.apple.com/br/movie/o-poderoso-chefao-legendado/umc.cmc.3ew9fykdnpfaq9t2jq5da011c?action=play">
+                        Apple TV
+                    </option>
+                </select>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about">
+        <div class="about__container">
+            <h2 class="title">Sobre o Filme</h2>
+            <div class="about__content">
+                <div class="about__content__sinopse">
+                    <h3 class="title">Sinopse:</h3>
+                    <p>"O Poderoso Chefão" é um clássico do cinema dirigido por Francis Ford Coppola em 1972. O filme
+                        narra a saga da família Corleone, uma poderosa máfia ítalo-americana, liderada por Don Vito
+                        Corleone, interpretado por Marlon Brando. Quando Don Vito é ferido, seu filho Michael,
+                        interpretado por Al Pacino, é forçado a assumir o controle da família e enfrentar uma série de
+                        desafios e traições enquanto tenta manter o poder da máfia intacto. O filme explora temas de
+                        lealdade, poder e corrupção em uma narrativa cativante que se tornou um marco no cinema mundial.
+                    </p>
+                </div>
+
+                <div class="about__content__trailer">
+                    <h3 class="title">Trailer:</h3>
+                    <div class="about__content__trailer__video">
+                        <iframe src="https://www.youtube.com/embed/UaVTIH8mujA">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>
+                &copy;Todos os direitos reservados. Este site ou qualquer parte dele não pode ser reproduzido ou usado de forma alguma sem autorização expressa
+            </p>
+        </div>
+    </footer>
 
 
     <script src="./dist/scripts/main.js"></script>
 </body>
+
 </html>

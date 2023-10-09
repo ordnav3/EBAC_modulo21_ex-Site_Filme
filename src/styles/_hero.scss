@@ -1,0 +1,56 @@
+@use 'vr';
+
+.hero {
+    padding: 7vw;
+    min-height: 50vw;
+    background-image: url(../../dist/images/the-godfather-don-vito-bow-tie-oqvoa4zp0oejt1qc.jpg);
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        padding: 3vw;
+        min-height: 20vw;
+        background-image: none;
+        padding-bottom: 72px;
+    }
+    &__content {
+
+        img {
+            width: 500px;
+
+            @media (max-width: 768px) {
+                width: 300px;
+            }
+        }
+
+        &__select {
+            margin-top: 40px;
+
+            label {
+                color: vr.$corTextoSecundario;
+                padding-bottom: 8px;
+            }
+
+            select {
+                display: block;
+                max-width: 400px;
+                width: 100%;
+                height: 50px;
+                font-size: 16px;
+                background-color: vr.$corDeFundoBtn;
+                color: vr.$corTextoPrincipal;
+                border-radius: 8px;
+
+                @media (max-width: 768px) {
+                    max-width: 300px;
+                }
+
+                option{
+                    background-color: #000;
+                }
+            }
+
+        }
+    }
+}
